@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Growdev</title>
+</head>
+<body>
+    <script>
+        //         Contextualização do desafio:
+        // As Ilhas Growdev formam um reino independente nos mares do Pacífico.
+        // Como é um reino recente, a sociedade é muito influenciada pela
+        // informática. A moeda oficial é a GrowCoin; existem notas de GC$ 50,00,
+        // GC$ 10,00, GC$ 5,00 e GC$ 1,00. Vocês foram contratados para ajudar na
+        // programação dos caixas automáticos de um grande banco das Ilhas
+        // Growdevs.
+
+        // Tarefa:
+        // Os caixas eletrônicos das Ilhas Growdev operam com todos os tipos de
+        // notas disponíveis, mantendo um estoque de cédulas para cada valor. Os
+        // clientes do banco utilizam os caixas eletrônicos para efetuar retiradas de
+        // um certo número inteiro de GrowCoins.
+        // Sua tarefa é escrever um algoritmo que, dado o valor de GrowCoins
+        // desejado pelo cliente, determine o número de cada uma das notas
+        // necessárias para totalizar esse valor. Por exemplo, se o Marcelo deseja
+        // retirar GC$ 50,00 basta entregar uma única nota de cinquenta GrowCoins.
+        // Se o Édson deseja retirar GC$ 72,00 será necessário entregar uma nota de
+        // GC$ 50,00, duas de GC$ 10,00 e duas de GC$ 1,00
+
+        // Exemplo de entrada:
+        // 72
+        // Exemplo de saída:
+        // GC$ 50,00 -> 1
+
+        // GC$ 10,00 -> 2
+        // GC$ 5,00 -> 0
+        // GC$ 1,00 -> 2
+
+        // Este desafio será realizado durante a aula com o Mentor e a resolução
+        // deverá ser postada na Class até o horário estipulado da tarefa na
+        // plataforma. Crie um arquivo compactado contendo os arquivos com a
+        // resolução do desafio e realize o upload no post da atividade no Class.
+
+        const nota1 = 50
+        const nota2 = 10
+        const nota3 = 5
+        const nota4 = 1
+        let contadornota1 = 0
+        let contadornota2 = 0
+        let contadornota3 = 0
+        let contadornota4 = 0
+        let saque = parseInt(prompt('Quanto vai sacar'))
+
+        for(saque; nota1 <= saque; saque -= nota1){
+            contadornota1++;
+            
+            
+        }
+        document.write(`GC$ 50,00 -> ${contadornota1} <br/>`)
+
+        for (saque; nota1 > saque && nota2 <= saque; saque -= nota2){
+            contadornota2++;
+            
+        }
+        document.write(`GC$ 10,00 -> ${contadornota2} <br/>`)
+
+        for(saque; nota2 > saque && nota3 <= saque; saque -= nota3){
+            contadornota3++;
+        }
+        document.write(`GC$ 5,00 -> ${contadornota3} <br/>`)
+
+        for(saque; nota3 > saque && nota4 <= saque; saque -= nota4){
+            contadornota4++;
+        }
+        document.write(`GC$ 1,00 -> ${contadornota4}`)
+    </script>
+</body>
+</html>
