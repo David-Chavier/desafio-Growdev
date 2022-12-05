@@ -59,21 +59,22 @@
         }
         document.write(`GC$ 50,00 -> ${contadornota1} <br/>`)
 
-        for (saque; nota1 > saque && nota2 <= saque; saque -= nota2){
+        for (saque;nota2 <= saque; saque -= nota2){
             contadornota2++;
             
         }
         document.write(`GC$ 10,00 -> ${contadornota2} <br/>`)
 
-        for(saque; nota2 > saque && nota3 <= saque; saque -= nota3){
+        for(saque;nota3 <= saque; saque -= nota3){
             contadornota3++;
         }
         document.write(`GC$ 5,00 -> ${contadornota3} <br/>`)
 
-        for(saque; nota3 > saque && nota4 <= saque; saque -= nota4){
+        for(saque;nota4 <= saque; saque -= nota4){
             contadornota4++;
         }
         document.write(`GC$ 1,00 -> ${contadornota4}`)
+
     </script>
 </body>
 </html>
