@@ -52,6 +52,11 @@
         let contadornota4 = 0
         let saque = parseInt(prompt('Quanto vai sacar'))
 
+        while(saque <= 0){
+            alert('Digite um valor valido')
+            saque = parseInt(prompt('Quanto vai sacar'))
+        }
+        
         for(saque; nota1 <= saque; saque -= nota1){
             contadornota1++;
             
